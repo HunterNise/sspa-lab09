@@ -21,4 +21,6 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Run pytest
-        run: pytest -q tests
+        run: |
+          export PYTHONPATH="${PYTHONPATH}:./"
+          pytest -q tests
