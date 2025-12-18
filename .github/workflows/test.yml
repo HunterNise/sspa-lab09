@@ -21,6 +21,4 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Run pytest
-        run: |
-          echo "Repository contents:" && ls -la
-          echo "Running pytest on tests/" && pytest -q tests
+        run: pytest -q tests
