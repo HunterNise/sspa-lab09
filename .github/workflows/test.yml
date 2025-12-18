@@ -21,4 +21,5 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Run pytest
-        run: pytest -q
+        run: |
+          pytest -q
