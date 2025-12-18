@@ -22,4 +22,5 @@ jobs:
         
       - name: Run pytest
         run: |
-          pytest -q
+          echo "Repository contents:" && ls -la
+          echo "Running pytest on tests/" && pytest -q tests
